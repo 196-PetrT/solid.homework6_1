@@ -1,16 +1,15 @@
-package homework.persister;
+package homework.core;
 
-public abstract class User{
-    private String name;
-//    User user = new User();
+public  class User{
+    private final String name;
 
     public User(String name){
         this.name = name;
     }
 
-    public abstract String getName();
+    public String getName(){
+        return name;
     }
-
 //    public void save(){
 //        PersisterF persister = new PersisterF(this);
 //        persister.save();
@@ -19,4 +18,4 @@ public abstract class User{
 //    public void report(){
 //        System.out.println("Report for user: " + name);
 //    }
-//}
+}
